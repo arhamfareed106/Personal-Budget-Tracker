@@ -54,6 +54,7 @@ def load_data():
     records = get_records_by_month(month)
     for r in records:
         tree.insert("", "end", values=r)
+        
 
 ttk.Label(root, text="Enter Month (YYYY-MM):").pack()
 month_entry = ttk.Entry(root)
